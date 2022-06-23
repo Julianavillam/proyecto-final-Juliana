@@ -125,7 +125,7 @@ body {
   font-weight: 500;
 }
 
-.logo {
+.intro {
   position: absolute;
   top: 5px;
   right: 15px;
@@ -187,4 +187,8 @@ h1{
 
 #banner{
     width: 100%;
+}
+
+#fondonavbar{
+    background-color: #f8f2e4;
 }
