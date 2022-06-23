@@ -193,6 +193,49 @@ h1{
     background-color: #f8f2e4;
 }
 
-.search{
-  
+.btn{
+  position: relative;
+  display: inline;
+  align-items: end;
+  justify-content: flex-end;
+  font-size: 2rem;
+  color: #3e4857;
+  height: 50rem;
+  padding: 0;
+  border-radius: 2rem;
+}
+input{
+  position: relative;
+  transform: scale(0);
+}
+
+.btn-icon{
+  font-size: 1.5rem;
+  transition: 0.35s;
+}
+
+.btn-text{
+  position: relative;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%) translateX(1.25rem);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1rem;
+  color: #3e4857;
+  transition: 0.35s;
+}
+
+input:checked ~ .btn{
+  background: #3f310f;
+}
+
+input:checked ~ .btn .btn-text{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-50%) translateX(2.5rem);
+}
+
+input:checked ~ .btn .btn-icon {
+  transform: translateX(-1.5rem);
 }
