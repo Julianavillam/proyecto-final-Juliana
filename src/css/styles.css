@@ -310,11 +310,23 @@ body {
 }
 
 .footer{
-  background-color: #f9c6db;
+  background-color: #3e4857;
   text-align: center;
-  color: #3e4857;
+  color: #ffffff;
   font-family: "Montserrat";
   font-size: medium;
   font-weight: lighter;
 }
 
+#textofinal{
+ font-family: "Poppins" "Bebas Neue";
+ font-weight: 500;
+ font-size: 900 ;
+ display: grid;
+ justify-content: center;
+ text-align: center;
+ color: #3e4857;
+ margin-inline: 80px;
+ margin-block-end: 40px; 
+
+}
