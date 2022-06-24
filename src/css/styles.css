@@ -158,84 +158,151 @@ body {
 h1{
     justify-content: center;
     text-align: center;
-    font-family: "Poppins" "Bebas Neue" ;
+    font-family: "Poppins" "Bebas Neue";
     font-weight: 500;
     font-size: 900 ;
 
 }
 
-.textonav{
+.textoheader{
     justify-content: center;
     text-align: center;
-    font-family: "Montserrat" ;
+    font-family: "Montserrat";
     font-size: medium;
     font-weight: lighter;
     margin-bottom: 4.5rem;
 }
 
-.contenedor{
+
+/*.contenedor{
     display: grid;
     margin-top: 85px;
     background-color: #fcad8d;
     
 }
 
-#Fondolamp{
+#Fondolampara{
     background-color: black;
     opacity: 0.5;
 }
 
-#banner{
+#bannernegro{
     width: 100%;
-}
+}*/
 
 #fondonavbar{
     background-color: #f8f2e4;
 }
 
-.btn{
-  position: relative;
-  display: inline;
-  align-items: end;
-  justify-content: flex-end;
-  font-size: 2rem;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #1D202B;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+  /*flexbox display: flex;
+  gap: 20px; */
+
+  /*grid*/
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+	gap: 20px;
+}
+
+.titulo {
+	font-size: 24px;
+	padding: 20px 0;
+}
+
+.contenedor-textos {
+  /* flexbox width: 70%;
+	display: flex;
+  flex-wrap: wrap;
+  gap: 20px; */
+
+  /*grid*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+	border-radius: 10px;
+	min-height: 200px;
+  font-family: "Poppins" "Bebas Neue" ;
   color: #3e4857;
-  height: 50rem;
-  padding: 0;
-  border-radius: 2rem;
-}
-input{
-  position: relative;
-  transform: scale(0);
-}
-
-.btn-icon{
-  font-size: 1.5rem;
-  transition: 0.35s;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+  /*flex box
+  width: calc(33.33% - 20px);*/
+	
 }
 
-.btn-text{
-  position: relative;
-  left: 0.5rem;
-  top: 50%;
-  transform: translateY(-50%) translateX(1.25rem);
-  visibility: hidden;
-  opacity: 0;
-  font-size: 1rem;
-  color: #3e4857;
-  transition: 0.35s;
+.card .textos {
+	height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /*grid
+  display: grid;
+  grid-template-rows: 1fr auto;*/
 }
 
-input:checked ~ .btn{
-  background: #3f310f;
+.banner {
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+ 
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /*grid*/
+  /* display: grid;
+  grid-template-rows:auto auto auto;
+  align-items: center; */
 }
 
-input:checked ~ .btn .btn-text{
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(-50%) translateX(2.5rem);
+.banner ul {
+	list-style: none;
 }
 
-input:checked ~ .btn .btn-icon {
-  transform: translateX(-1.5rem);
+.banner ul li {
+	margin: 15px;
+	font-weight: bold;
 }
+
+.banner .boton {
+	background: #3e4857;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 100px;
+	font-family: "Montserrat";
+	cursor: pointer;
+}
+
