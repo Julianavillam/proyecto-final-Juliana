@@ -156,6 +156,7 @@ body {
 }
 
 h1{
+    flex-direction: row;
     justify-content: center;
     text-align: center;
     font-family: "Poppins" "Bebas Neue";
@@ -165,6 +166,7 @@ h1{
 }
 
 .textoheader{
+    flex-direction: row;
     justify-content: center;
     text-align: center;
     font-family: "Montserrat";
@@ -241,7 +243,7 @@ body {
 	border-radius: 10px;
 	min-height: 200px;
   font-family: "Poppins" "Bebas Neue" ;
-  color: #3e4857;
+  color: #ffffff;
 	font-weight: bold;
 	padding: 20px;
 	position: relative;
@@ -293,7 +295,7 @@ body {
 }
 
 .banner .boton {
-	background: #3e4857;
+	background: #f8f2e4;
 	display: block;
 	width: 100%;
 	font-weight: bold;
@@ -304,5 +306,14 @@ body {
 	border-radius: 100px;
 	font-family: "Montserrat";
 	cursor: pointer;
+}
+
+.footer{
+  background-color: #f9c6db;
+  text-align: center;
+  color: #3e4857;
+  font-family: "Montserrat";
+  font-size: medium;
+  font-weight: lighter;
 }
 
